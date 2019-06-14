@@ -12,12 +12,12 @@
 }
 
 .card {
+  display: flex;
   opacity: 0.95;
   align-content: center;
   align-items: center;
   text-align: center;
-  min-width: 50vw;
-  max-width: 75vw;
+  width: 50vw;
 }
 
 #mainHeader {
@@ -35,4 +35,17 @@ body {
   height: 100vh;
   min-height: 100%;
   background-position: center;
+}
+
+#halImg {
+    height: 50vh;
+    width: 75vw;
+    max-height: 75%;
+    position: fixed;
+}
+
+#halImg .hal {
+    position: relative;
+    max-width: 10vw;
+    z-index: 2;
 }
