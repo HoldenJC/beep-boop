@@ -11,8 +11,14 @@
   font-weight: 500;
 }
 
+#result {
+  display: none;
+}
+
 .card {
   display: flex;
+  position: relative;
+  z-index: 3;
   opacity: 0.95;
   align-content: center;
   align-items: center;
@@ -41,16 +47,12 @@ input {
   resize: none;
   color: #dc3545;
   transition: all 3s;
-  /* transform-origin: left; */
-  /* transition-delay: 1s; */
 }
 
 .defaultFocus{
   resize: none;
   color: black;
   transition: all 3s;
-  /* transform-origin: left; */
-  /* transition-delay: 1s; */
 }
 
 #mainHeader {
@@ -71,14 +73,16 @@ body {
 }
 
 #halImg {
+    display: none;
     height: 50vh;
     width: 75vw;
     max-height: 75%;
-    position: fixed;
+    position: absolute;
+    z-index: 2;
 }
 
 #halImg .hal {
-    position: relative;
+    position: absolute;
     max-width: 10vw;
     z-index: 2;
 }

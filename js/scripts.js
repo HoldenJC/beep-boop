@@ -72,5 +72,7 @@ $(function(){
     userNum = parseInt($("#initialNumber").val());
 
     range(userNum);
+    $("#result").slideDown();
+    $("#halImg").fadeIn(1000);
   });
 });
