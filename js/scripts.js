@@ -60,10 +60,18 @@ function inputUnfocus() {
   $("#initialNumber").addClass("defaultFocus");
 }
 
+var resetForm = function(){
+    $("#result").slideToggle(1000);
+    $("#halImg").fadeToggle(1000);
+    $("#boopBtn").fadeToggle(1000);
+    $("#beepBtn").delay(1000).fadeToggle(1000);
+}
+
 $(function(){
   $("#initial-number").submit(function(event){
     event.preventDefault();
     document.addEventListener("submit", randomHal);
+    document.addEventListener("reset", resetForm);
 
     $("#result").empty();
     $("#halImg").empty();
@@ -72,7 +80,9 @@ $(function(){
     userNum = parseInt($("#initialNumber").val());
 
     range(userNum);
-    $("#result").slideDown();
-    $("#halImg").fadeIn(1000);
+    $("#result").slideToggle(1000);
+    $("#halImg").fadeToggle(1000);
+    $("#beepBtn").fadeToggle(1000);
+    $("#boopBtn").delay(1000).fadeToggle(1000);
   });
 });
