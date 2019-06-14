@@ -1,12 +1,12 @@
-# TITLE
+# Beep-Boop
 
-#### A web site to WHAT DOES IT DO
+#### _Beep-Boop Application, 6/14/2019_
 
-#### By **Holden Clark**
+#### By _**Holden Clark**_
 
 ## Description
 
-A website created with JS and HTML DESCRIPTION BODY.
+_A website which takes a user input number and returns a range of numbers or values depending on the ruleset described in the specs section below._
 
 ### Specs
 | Spec | Input | Output |
@@ -22,24 +22,34 @@ A website created with JS and HTML DESCRIPTION BODY.
 
 ## Setup/Installation Requirements
 
-* Clone this repository and open the .html file.
-
+* _Clone this repository_
+* _Open "index.html" in your web browser of choice_
+* _Enter a number value then press the "BEEP" button_
 
 ## Known Bugs
-* No known bugs at this time.
 
-## Technologies Used
-* JavaScript
-* HTML
+* No known bugs at this time.
 
 ## Support and contact details
 
-_Contact us with questions and comments._
+_If you have any questions, ideas, concerns, or would like to contribute in some way, feel free to e-mail me at HoldenJ_C@yahoo.com_
+
+## Technologies Used
+
+_HTML,_
+_CSS,_
+_Bootstrap,_
+_JavaScript,_
+_jQuery,_
+_Atom,_
+_GitHub,_
+_GitBash,_
+_Google Chrome_
 
 ### License
 
-*{This software is licensed under the MIT license}*
-
 Copyright (c) 2019 **_Holden Clark_**
 
-[Link to this project's gh-pages on GitHub](https://holdenjc.github.io/)
+This website is licensed under the MIT license.
+
+[Link to this project's gh-pages on GitHub](https://holdenjc.github.io/beep-boop)
