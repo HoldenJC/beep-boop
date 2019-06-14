@@ -10,6 +10,16 @@
     <title>Beep-Boop</title>
   </head>
   <body>
+    <!-- <iframe id="video" src="https://www.youtube.com/embed/7qnd-hdmgfk?controls=0rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe> part of an attempt to get a smooth transition to playing the "I'm sorry dave...." scene from 2001: A Space Odyssey if user enters very large numerical value-->
+
+    <audio id="cantdo" src="cantdo.mp3" preload="auto"></audio>
+    <a href="javascript:play_single_sound();">Play 5-sec sound on single channel</a>
+    <script type="text/javascript">
+	   function play_single_sound() {
+		document.getElementById('audiotag1').play();
+	}
+</script>
+
     <div class="container-fluid">
 
       <div id="halImg"></div>
@@ -18,18 +28,18 @@
 
       <div class="card text-white bg-dark mb-3 mx-auto">
         <div class="card-body">
-      <form id="initial-number">
-        <div class="form-group">
-          <h5 class="card-title">Enter a number to beep and boop up 'til:</h5>
-          <input id="initialNumber" type="number" onfocus="inputFocus()" onfocusout="inputUnfocus()" class="defaultFocus">
-        </div>
+          <form id="initial-number">
+            <div class="form-group">
+              <h5 class="card-title">Enter a number to beep and boop up 'til:</h5>
+              <input id="initialNumber" type="number" onfocus="inputFocus()" onfocusout="inputUnfocus()" class="defaultFocus">
+            </div>
 
-        <button id="beepBtn" type="submit" class="btn">BEEP</button>
-        <button id="boopBtn" type="reset" class="btn">BOOP</button>
-      </form>
+            <button id="beepBtn" type="submit" class="btn">BEEP</button>
+            <button id="boopBtn" type="reset" class="btn">BOOP</button>
+          </form>
+        </div>
+        <div id="result" class="card-footer bg-dark"></div>
       </div>
-      <div id="result" class="card-footer bg-dark"></div>
-    </div>
 
       <img src="#" class="hal" hidden="hidden" id="hal">
 

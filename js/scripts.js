@@ -2,6 +2,10 @@ var userNum, checkNum;
 var halImages = 0;
 
 var range = function(input){
+  if(input > 3000){
+    document.getElementById('cantdo').play();
+    break;
+  }
   for (var i = 0; i <= input; i++){
     checkNum = i.toString();
     if (checkNum.match(/[3]/gi)){
@@ -86,3 +90,16 @@ $(function(){
     $("#boopBtn").delay(1000).fadeToggle(1000);
   });
 });
+    // Attempt to get a smooth transition to playing the "I'm sorry dave...." scene from 2001: A Space Odyssey if user enters very large numerical value ( would go within $(function() )
+
+    // var player = document.getElementById("video");
+    // if(halImages > 50){
+    //   setTimeout(function(){$("#video").show();}, 1500);
+    //   var req = player.requestFullscreen
+    //    || player.webkitRequestFullscreen
+    //    || player.mozRequestFullScreen
+    //    || player.msRequestFullscreen;
+    //
+    //    req.call(player);
+    //
+    // }
