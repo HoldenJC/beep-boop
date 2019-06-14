@@ -1,6 +1,8 @@
+//initial variable declaration
 var userNum, checkNum;
 var halImages = 0;
 
+//function that follows rules detailed in README.md file to print out various statements depending on user input number
 var range = function(input){
   for (var i = 0; i <= input; i++){
     checkNum = i.toString();
@@ -20,6 +22,7 @@ var range = function(input){
   }
 }
 
+//function that adds images of hal from 2001: A Space Odyssey equivalent to the number of times "I'm sorry, Dave. I'm afraid I can't do that." has been printed out
 var randomHal = function(){
     var canvas = document.querySelector('#halImg');
     var hal_template = document.querySelector('#hal');
@@ -50,16 +53,19 @@ var randomHal = function(){
     };
 };
 
+//function that adds/removes CSS classes on user focus which will gradually change the text color within the user input field
 function inputFocus() {
   $("#initialNumber").removeClass("defaultFocus");
   $("#initialNumber").addClass("redFocus");
 }
 
+//function that adds/removes CSS classes on user defocus which will gradually change the text color within the user input field
 function inputUnfocus() {
   $("#initialNumber").removeClass("redFocus");
   $("#initialNumber").addClass("defaultFocus");
 }
 
+//function that resets the UI to its original state one initial pageload
 var resetForm = function(){
     $("#result").slideToggle(1000);
     $("#halImg").fadeToggle(1000);
@@ -67,6 +73,7 @@ var resetForm = function(){
     $("#beepBtn").delay(1000).fadeToggle(1000);
 }
 
+//function that handles main form submission/reveals result to user and resets certain ids/values for subsequent submissions
 $(function(){
   $("#initial-number").submit(function(event){
     event.preventDefault();
@@ -87,11 +94,12 @@ $(function(){
   });
 });
 
-    // JS Part of an attempt to get a smooth transition to playing the "I'm sorry dave...." scene from 2001: A Space Odyssey if user enters very large numerical value ( would go within $(function() )
 
-    // var halvideo = document.getElementById("video");
-    // if(halImages > 50){
-    //   setTimeout(function(){$("#video").show();}, 1500);
-    //   var inputOversize = halvideo.requestFullscreen
-    //    intputOversize.call(player);
-    // }
+// JS Part of an attempt to get a smooth transition to playing the "I'm sorry dave...." scene from 2001: A Space Odyssey if user enters very large numerical value ( would go within $(function() )
+
+// var halvideo = document.getElementById("video");
+// if(halImages > 50){
+//   setTimeout(function(){$("#video").show();}, 1500);
+//   var inputOversize = halvideo.requestFullscreen
+//    intputOversize.call(player);
+// }
