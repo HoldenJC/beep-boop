@@ -5,7 +5,9 @@ $(function(){
     event.preventDefault();
     // resetFormField = "";
 
-    userNum = $("#initialNumber").val();
+    userNum = parseInt($("#initialNumber").val());
+
+
 
     $("#result").empty().append(userNum);
   });
