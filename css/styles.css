@@ -11,7 +11,7 @@
   font-weight: 500;
 }
 
-#result, #boopBtn, #video {
+#result, #boopBtn {
   display: none;
 }
 
@@ -70,14 +70,17 @@ body {
   height: 100vh;
   min-height: 100%;
   background-position: center;
+  overflow: hidden;
 }
 
 #halImg {
     display: none;
-    height: 50vh;
+    margin-left: 6vw;
+    height: 60vh;
     width: 75vw;
     max-height: 75%;
     position: absolute;
+    bottom: 20vh;
     z-index: 2;
 }
 
