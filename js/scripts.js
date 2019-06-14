@@ -4,11 +4,11 @@ var range = function(input){
   for (var i = 0; i <= input; i++){
     checkNum = i.toString();
     if (checkNum.match(/[3]/gi)){
-      $("#result").append("I'm sorry, Dave. I'm afraid I can't do that.");
+      $("#result").append('<span class="num3">I\'m sorry, Dave. I\'m afraid I can\'t do that.</span>');
     } else if (checkNum.match(/[2]/gi)){
-      $("#result").append("Boop!");
+      $("#result").append('<span class="num2">Boop!</span>');
     } else if (checkNum.match(/[1]/gi)){
-      $("#result").append("Beep!");
+      $("#result").append('<span class="num1">Beep!</span>');
     } else {
       $("#result").append(i);
     }
