@@ -18,7 +18,7 @@ A website created with JS and HTML DESCRIPTION BODY.
 | **Returns "Beep!" for any number containing the digit 1** | 11 | Beep! |
 | **Returns "Boop!" for any number containing the digit 2** | 22 | Boop! |
 | **Returns "I'm sorry, Dave. I'm afraid I can't do that." for any number containing the digit 3** | 33 | I'm sorry, Dave. I'm afraid I can't do that. |
-| **Follows all above rules (further down the list, the more important if there is a conflict) while returning range of numbers from 0 up to and including user's number** | 5 | 0, Beep!, Boop!, I'm sorry, Dave. I'm afraid I can't do that., 4, 5 |
+| **Follows all above rules while returning range of numbers from 0 up to and including user's number. If a rule is further down in the above list, it takes precedence over the rules coming before it in the case of a conflict** | 5 | 0, Beep!, Boop!, I'm sorry, Dave. I'm afraid I can't do that., 4, 5 |
 
 ## Setup/Installation Requirements
 

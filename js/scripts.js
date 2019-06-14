@@ -26,6 +26,5 @@ $(function(){
     userNum = parseInt($("#initialNumber").val());
 
     range(userNum);
-
   });
 });
