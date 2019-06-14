@@ -11,16 +11,21 @@
   </head>
   <body>
     <div class="container">
-      <h1>Beep-Boop</h1>
+      <h1 id="mainHeader">Beep-Boop</h1>
 
+      <div class="card text-white bg-dark mb-3 mx-auto">
+        <div class="card-body">
       <form id="initial-number">
         <div class="form-group">
-          <label for="initialNumber">Enter a number to beep and boop up 'til:</label>
+          <h5 class="card-title">Enter a number to beep and boop up 'til:</h5>
+          <!-- <label for="initialNumber"></label> -->
           <input id="initialNumber" type="number">
         </div>
 
-        <button type="submit" class="btn btn-info">BEEP</button>
+        <button type="submit" class="btn btn-danger">BEEP</button>
       </form>
+      </div>
+    </div>
 
       <div id="result">
 

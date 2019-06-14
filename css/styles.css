@@ -11,6 +11,23 @@
   font-weight: 500;
 }
 
+.card {
+  opacity: 0.95;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  min-width: 50vw;
+  max-width: 75vw;
+}
+
+#mainHeader {
+  color: white;
+  font-size: 5rem;
+  text-shadow: 2px 2px 4px #dc3545;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
 body {
   background-image: url("../img/bg-main.jpg");
   background-repeat: no-repeat;
