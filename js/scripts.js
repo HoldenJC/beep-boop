@@ -1,6 +1,8 @@
 //initial variable declaration
 var userNum, checkNum;
 var halImages = 0;
+var beepSound = new Audio('audio/beep.mp3');
+var halSound = new Audio('audio/cantdo.wav');
 
 //function that follows rules detailed in README.md file to print out various statements depending on user input number
 var range = function(input){
@@ -65,12 +67,22 @@ function inputUnfocus() {
   $("#initialNumber").addClass("defaultFocus");
 }
 
+//function that chooses which type of beep to play depending on whether or not the user input value produced any "I'm sorry, Dave..." statements
+function beepChoice() {
+  if (halImages > 0){
+    halSound.play();
+  } else {
+    beepSound.play();
+  }
+}
+
 //function that resets the UI to its original state one initial pageload
 var resetForm = function(){
     $("#result").slideToggle(1000);
     $("#halImg").fadeToggle(1000);
     $("#boopBtn").fadeToggle(1000);
     $("#beepBtn").delay(1000).fadeToggle(1000);
+    beepSound.play();
 }
 
 //function that handles main form submission/reveals result to user and resets certain ids/values for subsequent submissions
@@ -91,6 +103,7 @@ $(function(){
     $("#halImg").fadeToggle(1000);
     $("#beepBtn").fadeToggle(1000);
     $("#boopBtn").delay(1000).fadeToggle(1000);
+    beepChoice();
   });
 });
 
