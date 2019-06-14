@@ -52,4 +52,4 @@ Copyright (c) 2019 **_Holden Clark_**
 
 This website is licensed under the MIT license.
 
-[Link to this project's gh-pages on GitHub](https://holdenjc.github.io/beep-boop)
+[Link to this project's gh-pages on GitHub](https://holdenjc.github.io/beep-boop/)
