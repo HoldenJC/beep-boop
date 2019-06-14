@@ -19,10 +19,10 @@
       <form id="initial-number">
         <div class="form-group">
           <h5 class="card-title">Enter a number to beep and boop up 'til:</h5>
-          <input id="initialNumber" type="number">
+          <input id="initialNumber" type="number" onfocus="inputFocus()" onfocusout="inputUnfocus()" class="defaultFocus">
         </div>
 
-        <button type="submit" class="btn btn-danger">BEEP</button>
+        <button type="submit" class="btn">BEEP</button>
       </form>
       </div>
     </div>

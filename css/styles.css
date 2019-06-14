@@ -18,6 +18,39 @@
   align-items: center;
   text-align: center;
   width: 50vw;
+  box-shadow: 3px 3px 5px black;
+}
+
+.btn {
+  background-color: white;
+  color: #dc3545;
+}
+
+.btn:hover {
+  background-color: #dc3545;
+  color: white;
+  transition: all 1s;
+}
+
+input {
+  width: 100%;
+  font-weight: 500;
+}
+
+.redFocus {
+  resize: none;
+  color: #dc3545;
+  transition: all 3s;
+  /* transform-origin: left; */
+  /* transition-delay: 1s; */
+}
+
+.defaultFocus{
+  resize: none;
+  color: black;
+  transition: all 3s;
+  /* transform-origin: left; */
+  /* transition-delay: 1s; */
 }
 
 #mainHeader {

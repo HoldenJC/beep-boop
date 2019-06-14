@@ -50,6 +50,16 @@ var randomHal = function(){
     };
 };
 
+function inputFocus() {
+  $("#initialNumber").removeClass("defaultFocus");
+  $("#initialNumber").addClass("redFocus");
+}
+
+function inputUnfocus() {
+  $("#initialNumber").removeClass("redFocus");
+  $("#initialNumber").addClass("defaultFocus");
+}
+
 $(function(){
   $("#initial-number").submit(function(event){
     event.preventDefault();
